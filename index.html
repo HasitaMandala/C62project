@@ -1,22 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>photos</title>
+    <title>My website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section>
-        <h1>Art</h1>
-        <span>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.aWsvfvEDZxqzc9oI78IPeQHaLj&pid=Api&P=0&w=300&h=300">
-            <img src="https://c1.staticflickr.com/3/2357/2069103502_7c22c269aa_z.jpg?zz=1">
-        </span>
-    </section>
-    <section>
+    <div class="container">
+        <section id="app">
+            <h1>Art and music</h1>
+            <div class="line"></div>
+            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/8G2Tr074o-rg6stK0ZEO0-Q3iJe0VD_orKc9WCeJ7Ao/embed"></iframe>
+            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/80JEt9NbNKlbbXZZrTDHa_5EmyjIdQMdpG_hFDUi4Xs/embed"></iframe>
+        </section>
         <div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
                 <div class="item active">
@@ -27,15 +28,16 @@
                         </div>
                     </center>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <center>
+
+                <div class="item">
+                    <center>
                 <img src="https://assets.saatchiart.com/saatchi/882784/art/3164938/2234829-WGYUGXPN-8.jpg">
                 <div class="carousel-content">
                     <p>flowers</p>
                 </div>
-            </center>
+                    </center>
+                </div>
+            </div>
 
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -63,6 +65,17 @@
                         </div>
                     </center>
                 </div>
+
+                <div class="item">
+                    <center>
+                        <a href="https://x.thunkable.com/copy/8940833194dff98b1b5de378427cf7ac" target="_blank">
+                            <img src="icons8-chat-room-64.png">
+                        </a>
+                        <div class="carousel-content">
+                            <p>Chat app</p>
+                        </div>
+                    </center>
+                </div>
             </div>
 
             <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
@@ -72,5 +85,14 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-    </section>
-</body></html>
+
+        <section id="chatbot">
+            <h1>Chatbot</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/545d3efb-c9b7-4caf-9f67-ef502e4f9d13">
+            </iframe>
+        </section>
+    </div>
+</body>
+
+</html>
